@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rubrica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+
+
+<body>
+    
+    <!-- pseudoNav -->
+    <nav>
+        <div class="pseudo-nav">
+            <!-- blocco colorato che simula NavBar -->
+        </div>
+    </nav>
+    
+    
+    <header class="container-fluid">
+        
+        <div class="row header-custom align-items-center">
+            <div class="col-12 text-center">
+                <h1>Rubrica di David</h1>
+            </div>
+        </div>
+        
+    </header>
+    
+    <!-- area interattiva/input -->
+    <section class="container-fluid area_interattiva">
+        
+        <div class="row text-center">
+            
+            <article class="col-12 col-md-4 my-5" >
+                <!-- mostra contatti -->
+                <h4 id="tit_1">rubrica</h4>
+                <button id="showContactsBtn" type="button" class="btn btn-outline-secondary btn_custom my-3">visualizza</button>
+                
+            </article>
+            
+            <article class="col-12 col-md-4 my-5" >
+                <!-- input/aggiungi contatto -->
+                <h4>input/aggiungi contatto</h4>
+
+                <div class="row aggiungi_contatto">
+
+                    <div class="col-6">
+                        <div class="input-group input-group-sm mb-3">
+                            <input id="input_nome" type="text" class="form-control mt-3" placeholder="nome" >
+                          </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group input-group-sm mb-3">
+                            <input id="input_cognome" type="text" class="form-control mt-3" placeholder="cognome" >
+                          </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="input-group input-group-sm mb-3">
+                            <input id="input_tel" type="number" class="form-control mt-3 input_tel" placeholder="telefono" >
+                          </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="input-group input-group-sm mb-3 justify-content-around">
+                            <button id="addContactsBtn" type="button" class="btn btn-outline-secondary btn_custom my-3">aggiungi</button>
+                            <button id="removeContactsBtn" type="button" class="btn btn-outline-secondary btn_custom my-3">rimuovi</button>
+                            <button id="editContactsBtn" type="button" class="btn btn-outline-secondary btn_custom my-3">modifica</button>
+                          </div>
+                    </div>
+
+                </div>
+
+            </article>
+            
+            <article class="col-12 col-md-4 my-5" >
+                <!-- cerca contatto -->
+                <h4>cerca contatto</h4>
+                
+            </article>
+            
+        </div>
+        
+    </section>
+
+
+    <!-- area output (consultativa)  -->
+    <section class="container-fluid area_output" >
+
+        <div class="row justify-content-center">
+            <article id="contactsWrapper" class="col-12 col-md-8" >
+
+            </article>
+        </div>
+
+    </section>
+        
+
+    
+    
+    
+    
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- JS fontawesome -->
+    <script src="https://kit.fontawesome.com/9339ce24f2.js" crossorigin="anonymous"></script>
+    
+    <!-- JS -->
+    <script src="./main.js"></script>
+    
+</body>
+
+
+
+
+</html>
