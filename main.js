@@ -110,6 +110,9 @@ let rubrica = {
                 contact_number = numerox;
             }
         }  )
+        // aggiungo la funzione al metodo, come suggeritomi, ma contiua a non funzionare:
+        this.showContacts();
+
     }
 
 
@@ -174,6 +177,8 @@ editContactsBtn.addEventListener( `click`, ()=> {
         input_cognome.value = ``;
         input_tel.value = ``;
     }
+
+
 } )
 
 
