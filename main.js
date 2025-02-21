@@ -101,16 +101,16 @@ let rubrica = {
 
     },
 
-    // NON FUNZIONA- NON RIESCO A RISOLVERE NEMMENO CON LA VIDEO SOLUZIONE
+
     editContact : function (namex, cognomex, numerox) {
 
         this.lista_contatti.forEach(  (contatto)=> {
             if (contatto.contact_name == namex) {
-                contact_cognome = cognomex;
-                contact_number = numerox;
+                contatto.contact_cognome = cognomex;
+                contatto.contact_number = numerox;
             }
         }  )
-        // aggiungo la funzione al metodo, come suggeritomi, ma contiua a non funzionare:
+
         this.showContacts();
 
     }
@@ -169,7 +169,7 @@ removeContactsBtn.addEventListener(`click`, ()=> {
 })
 
 
-// NON FUNZIONA- NON RIESCO A RISOLVERE NEMMENO CON LA VIDEO SOLUZIONE
+
 editContactsBtn.addEventListener( `click`, ()=> {
     if(input_nome != ``) {
         rubrica.editContact( input_nome.value, input_cognome.value, input_tel.value )
